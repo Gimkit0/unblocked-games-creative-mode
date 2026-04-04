@@ -7,12 +7,12 @@
                 {
                     "title": "FNF Classic",
                     "thumbnail": "https://kbhgames.com/wp-content/uploads/2020/11/Friday-Night-Funkin.png",
-                    "url": "https://fnf.kdata1.com/2025/fnf/7500/"
+                    "url": "https://fnf.kdata1.com/2024/fnf/5201/"
                 },
                 {
                     "title": "Friday Night Funkin VS. KAPI v2.0",
                     "thumbnail": "https://kbhgames.com/wp-content/uploads/2021/04/Friday-Night-Funkin-VS.-KAPI.jpg",
-                    "url": "https://fnf.kdata1.com/kapi-arcade-showdown/2"
+                    "url": "https://mod.fnfhub.net/games/24899?token=c28f0c6ecd0c3cc97d2a212fb9f58dd7"
                 }
             ]
         },
@@ -23,7 +23,7 @@
                 {
                     "title": "OSU Online",
                     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/2/29/Osu%21_logo_2024.png",
-                    "url": "https://webosu.online/"
+                    "url": "https://webosu-2.github.io/"
                 },
                 {
                     "title": "Rhythm Plus",
@@ -43,11 +43,6 @@
             "name": "Battle Royale Games",
             "description": "Engage in intense multiplayer battles where the last player standing wins.",
             "games": [
-                {
-                    "title": "1v1.lol",
-                    "thumbnail": "https://1v1.lol/img/logo.png",
-                    "url": "https://1v1.lol"
-                },
                 {
                     "title": "yohoho.io",
                     "thumbnail": "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=94,height=94,fit=cover,f=auto/9b373b5219cd66a82389d81d7cda8e23/yohoho-io.jpeg",
