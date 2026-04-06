@@ -251,6 +251,33 @@
                     "url": "https://holeio.com/"
                 }
             ]
+        },
+        "universal": {
+            "name": "Universal Games",
+            "description": "Games with games inside that are mostly multiplayer.",
+            "games": [
+                {
+                    "title": "Block Star Planet",
+                    "thumbnail": "https://imgs.search.brave.com/hYCQFjKx6Z3kNTuB-cPHPCGaO3l3UX8JF8PKUl6PE8U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMua2V5Z2FtZXMu/Y29tLzUvMTEyOTM1/LzkyNjU3LzY3Mng0/NDgvYmxvY2tzdGFy/cGxhbmV0LndlYnA",
+                    "url": "https://blockstarplanet.com"
+                },
+                {
+                    "title": "Roblox",
+                    "thumbnail": "https://imgs.search.brave.com/sG4iGliB7a-iIcfMEPIAk_QDD8mAMe8Pd0E2yV8MEQ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvY29v/bC1yb2Jsb3gtcGlj/dHVyZXMteDNpZWpy/aWtveHo0MHh0cS5q/cGc",
+                    "url": "https://stu.aarona.ru/ham/0516023a2b63471a545b58232877065a1a0511643e2c061a0c12063977384704545b467a773b465d190f1a"
+                }
+            ]
+        },
+        "simulation": {
+            "name": "Simulation Games",
+            "description": "Grind till you be the best!",
+            "games": [
+                {
+                    "title": "Growden.io",
+                    "thumbnail": "https://imgs.search.brave.com/WW9zlANps3939fpv9vw3UCL7gUWdjPERZzRfAutsrck/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Z3Jvd2RlbmlvLm5l/dC9hc3NldHMvaW1n/L2dyb3dkZW5pby1o/b3cucG5n",
+                    "url": "https://growden.io/"
+                }
+            ]
         }
     },
     "horror_games": {
