@@ -232,7 +232,8 @@
                 {
                     "title": "agar.io",
                     "thumbnail": "https://cdn3.downdetector.com/cdn-cgi/image/width=750/https://cdn2.downdetector.com/static/uploads/logo/Agar.io.png",
-                    "url": "https://agar.io/"
+                    "url": "https://agar.io/",
+                    "embedMethod": "embeddrr"
                 },
                 {
                     "title": "starve.io",
@@ -248,6 +249,19 @@
                     "title": "Hole.io",
                     "thumbnail": "https://imgs.search.brave.com/1C8eA18LSm8mIbNk8_BsVkoXUuHyG6XDPptZ2HkE_Bo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/ZS1pbWFnZXMucy1t/aWNyb3NvZnQuY29t/L2ltYWdlL2FwcHMu/NTk3ODEuMTQyMTE0/ODc2MzQ5NTA5MDEu/NDJlOTg0ZmItNTkx/NS00ODBiLWE4MGQt/OWRlNjE1MzJiN2Y3/Ljk5MzY2MjFlLWRi/NGItNGZjNC1hZjA1/LWZkZGVmYmZhMTgx/Yz9xPTkwJnc9MzM2/Jmg9MjAw",
                     "url": "https://holeio.com/"
+                }
+            ]
+        }
+    },
+    "horror_games": {
+        "single_player": {
+            "name": "Single-Player Horror Games",
+            "description": "Immerse yourself in a world of terror and suspense.",
+            "games": [
+                {
+                    "title": "FNAF 1",
+                    "thumbnail": "https://www.1games.io/cache/game/the-haunted/the-haunted-m200x130.webp",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/methods/refs/heads/main/Fnaf1.html"
                 }
             ]
         }
