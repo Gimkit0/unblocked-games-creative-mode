@@ -168,7 +168,7 @@
                 {
                     "title": "Geometry Dash Lite",
                     "thumbnail": "https://img.icons8.com/?size=512&id=oVj0wlZehUCr&format=png",
-                    "url": "https://ozgames.io/geometry-dash/geometry-dash.embed"
+                    "url": "https://geometrylitegame.org/game/geometry-dash-lite/"
                 },
                 {
                     "name": "Dashmetry",
@@ -230,12 +230,6 @@
             "description": "Engage in strategic multiplayer battles where the best tactics win.",
             "games": [
                 {
-                    "title": "agar.io",
-                    "thumbnail": "https://cdn3.downdetector.com/cdn-cgi/image/width=750/https://cdn2.downdetector.com/static/uploads/logo/Agar.io.png",
-                    "url": "https://agar.io/",
-                    "embedMethod": "embeddrr"
-                },
-                {
                     "title": "starve.io",
                     "thumbnail": "https://imgs.search.brave.com/rS_ct4LU-PMuv-TeQHE8r1vwclUjxm2oWQhVC9kv_i0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS8x/cy1KQk8zTkU3RS9t/cWRlZmF1bHQuanBn",
                     "url": "https://starve.io/"
@@ -265,7 +259,7 @@
                     "title": "Roblox",
                     "thumbnail": "https://imgs.search.brave.com/sG4iGliB7a-iIcfMEPIAk_QDD8mAMe8Pd0E2yV8MEQ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvY29v/bC1yb2Jsb3gtcGlj/dHVyZXMteDNpZWpy/aWtveHo0MHh0cS5q/cGc",
                     "url": "https://nowgg.fun/apps/a/19900/b.html",
-                    "embedMethod": "embeddrr"
+                    "embedMethod": "iframe"
                 }
             ]
         },
@@ -305,6 +299,51 @@
                     "title": "FNAF 4",
                     "thumbnail": "https://imgs.search.brave.com/R3r9njOU6IIjZQeBd_nlIxtUp2CIDsRxsiRBwkhUR2A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzA2/MTA2Mi5wbmc",
                     "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/methods/refs/heads/main/Fnaf4.html"
+                },
+                {
+                    "title": "FNAF 4 Halloween Edition",
+                    "thumbnail": "https://cdn.jsdelivr.net/gh/gn-math/covers@main/428.png",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/Five%20Nights%20at%20Freddy's%204_%20Halloween.html"
+                },
+                {
+                    "title": "FNAF: Sister Location",
+                    "thumbnail": "https://cdn.jsdelivr.net/gh/gn-math/covers@main/185.png",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/Five%20Nights%20at%20Freddy's_%20Sister%20Location.html"
+                },
+                {
+                    "title": "FNAF: World",
+                    "thumbnail": "https://cdn.jsdelivr.net/gh/gn-math/covers@main/190.png",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/Five%20Nights%20at%20Freddy's_%20World.html"
+                },
+                {
+                    "title": "FNAF: Pizza Simulator",
+                    "thumbnail": "https://cdn.jsdelivr.net/gh/gn-math/covers@main/191.png",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/Five%20Nights%20at%20Freddy's_%20Pizza%20Simulator.html"
+                },
+                {
+                    "title": "FNAF: Ultimate Custom Night",
+                    "thumbnail": "https://cdn.jsdelivr.net/gh/gn-math/covers@main/192.png",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/Five%20Nights%20at%20Freddy's_%20Ultimate%20Custom%20Night.html"
+                },
+                {
+                    "title": "A Bite at Freddy's",
+                    "thumbnail": "https://cdn.jsdelivr.net/gh/gn-math/covers@main/258.png",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/A%20Bite%20at%20Freddy's.html"
+                },
+                {
+                    "title": "Five Night's at Candy's",
+                    "thumbnail": "https://cdn.jsdelivr.net/gh/gn-math/covers@main/503.png",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/Five%20Nights%20at%20Candy's.html"
+                },
+                {
+                    "title": "Five Night's at Candy's 2",
+                    "thumbnail": "https://cdn.jsdelivr.net/gh/gn-math/covers@main/504.png",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/Five%20Nights%20at%20Candy's%202.html"
+                },
+                {
+                    "title": "Granny",
+                    "thumbnail": "https://cdn.jsdelivr.net/gh/gn-math/covers@main/90.png",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/Granny.html"
                 }
             ]
         }
