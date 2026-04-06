@@ -91,12 +91,12 @@
                 },
                 {
                     "title": "FNF Sick of It – Speed VS KSI",
-                    "embedUrl": "https://fnf.kdata1.com/2024/sick-of-it-a-speed-vs-ksi-oneshot/1/",
+                    "embedUrl": "https://w8.snokido.com/games/html5/friday-night-funkin/speed-ksi01/index.html",
                     "thumbnail": "https://kbhgames.com/wp-content/uploads/2024/11/fnf-sick-of-it-a-speed-vs-ksi-oneshot.jpg"
                 },
                 {
-                    "title": "FNF RUSH E but BOYFRIEND plays it on Piano",
-                    "embedUrl": "https://fnf.kdata1.com/rush-e-piano/1/",
+                    "title": "FNF RUSH E",
+                    "embedUrl": "https://w8.snokido.com/games/html5/friday-night-funkin/rushe02/index.html",
                     "thumbnail": "https://kbhgames.com/wp-content/uploads/2022/12/FNF-RUSH-E-but-BOYFRIEND-plays-it-on-Piano.jpg"
                 },
                 {
@@ -106,12 +106,12 @@
                 },
                 {
                     "name": "FNF vs TABI Revival",
-                    "embedUrl": "https://fnf.kdata1.com/2025/tabi-revival/1/",
+                    "embedUrl": "https://w8.snokido.com/games/html5/friday-night-funkin/tabi-revival01/index.html",
                     "thumbnail": "https://kbhgames.com/wp-content/uploads/2025/03/FNF-vs-TABI-Revival.jpg"
                 },
                 {
                     "name": "FNF Vs. Hex 2 (Weekend Update)",
-                    "embedUrl": "https://fnf.kdata1.com/hex-weekend/2/",
+                    "embedUrl": "https://w8.snokido.com/games/html5/friday-night-funkin/hex21/index.html",
                     "thumbnail": "https://kbhgames.com/wp-content/uploads/2021/04/friday-night-funkin-vs-hex-mod-full-week.jpg"
                 },
                 {
@@ -141,18 +141,13 @@
                 },
                 {
                     "name": "FNF vs MrBeast (TeamSeas)",
-                    "embedUrl": "https://fnf.kdata1.com/teamsea/1/?dd",
+                    "embedUrl": "https://w8.snokido.com/games/html5/friday-night-funkin/mrbeast/index.html",
                     "thumbnail": "https://kbhgames.com/wp-content/uploads/2021/11/FNF-vs-MrBeast-TeamSeas.jpg"
                 },
                 {
                     "name": "Attack of the Killer Beast, but is FNF Mod",
-                    "embedUrl": "https://fnf.kdata1.com/attack-of-the-killer-beast-but-is-fnf-mod/1/",
+                    "embedUrl": "https://w8.snokido.com/games/html5/friday-night-funkin/mrbeast-meme/index.html",
                     "thumbnail": "https://kbhgames.com/wp-content/uploads/2023/02/attack-of-the-killer-beast-but-is-fnf-mod.jpg"
-                },
-                {
-                    "name": "FNF Vs Super Funky Idol",
-                    "embedUrl": "https://fnf.kdata1.com/super-idol/1/",
-                    "thumbnail": "https://kbhgames.com/wp-content/uploads/2021/12/FNF-Vs-Super-Funky-Idol.jpg"
                 }
             ]
         },
@@ -189,6 +184,16 @@
                     "name": "Piano Tiles 3",
                     "embedUrl": "https://www.h5games4u.com/games/Magic-Piano-Music/index.html",
                     "thumbnail": "https://img.gamedistribution.com/58deefb8f63943dcbc5093070b9b5777-512x512.jpg"
+                },
+                {
+                    "name": "Bemuse",
+                    "embedUrl": "https://bemuse.ninja/",
+                    "thumbnail": "https://bemuse.ninja/build/assets/logo-with-shadow-f78db43c1a8aabfbace5.svg"
+                },
+                {
+                    "name": "Sprunki",
+                    "embedUrl": "https://iframegame.com/embed/incredibox-sprunki/index.html",
+                    "thumbnail": "https://sprunkimods.com/wp-content/uploads/2024/11/sprunki-retake-300x177.png"
                 }
             ]
         }
@@ -217,6 +222,32 @@
                     "name": "Rebels Clash",
                     "embedUrl": "https://bitlifeonline.github.io/rebels-clash/",
                     "thumbnail": "https://images2.1games.io/cache/game/rebels-clash/rebels-clash-m200x130.webp"
+                }
+            ]
+        },
+        "strategy": {
+            "name": "Strategy Games",
+            "description": "Engage in strategic multiplayer battles where the best tactics win.",
+            "games": [
+                {
+                    "title": "agar.io",
+                    "thumbnail": "https://cdn3.downdetector.com/cdn-cgi/image/width=750/https://cdn2.downdetector.com/static/uploads/logo/Agar.io.png",
+                    "url": "https://agar.io/"
+                },
+                {
+                    "title": "starve.io",
+                    "thumbnail": "https://imgs.search.brave.com/rS_ct4LU-PMuv-TeQHE8r1vwclUjxm2oWQhVC9kv_i0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS8x/cy1KQk8zTkU3RS9t/cWRlZmF1bHQuanBn",
+                    "url": "https://starve.io/"
+                },
+                {
+                    "title": "Smash Karts",
+                    "thumbnail": "https://imgs.search.brave.com/Ap_sN_Oqn3WUY966RDgvlW7HOouNiTO3BbZAs7Ymu1w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/cG9raS1jZG4uY29t/L2Nkbi1jZ2kvaW1h/Z2UvcT03OCxzY3E9/NTAsd2lkdGg9MjA0/LGhlaWdodD0yMDQs/Zml0PWNvdmVyLGY9/YXV0by85YzllNTI5/YjE0NzMxYmU4NzFi/MDdiODk2NjBiYmMy/YS9zbWFzaC1rYXJ0/cy5wbmc",
+                    "url": "https://smashkarts.io/"
+                },
+                {
+                    "title": "Hole.io",
+                    "thumbnail": "https://imgs.search.brave.com/1C8eA18LSm8mIbNk8_BsVkoXUuHyG6XDPptZ2HkE_Bo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/ZS1pbWFnZXMucy1t/aWNyb3NvZnQuY29t/L2ltYWdlL2FwcHMu/NTk3ODEuMTQyMTE0/ODc2MzQ5NTA5MDEu/NDJlOTg0ZmItNTkx/NS00ODBiLWE4MGQt/OWRlNjE1MzJiN2Y3/Ljk5MzY2MjFlLWRi/NGItNGZjNC1hZjA1/LWZkZGVmYmZhMTgx/Yz9xPTkwJnc9MzM2/Jmg9MjAw",
+                    "url": "https://holeio.com/"
                 }
             ]
         }
