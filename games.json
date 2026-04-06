@@ -260,8 +260,23 @@
             "games": [
                 {
                     "title": "FNAF 1",
-                    "thumbnail": "https://www.1games.io/cache/game/the-haunted/the-haunted-m200x130.webp",
+                    "thumbnail": "https://imgs.search.brave.com/l25e8EYxVhKWlcA68TopNRmGXGWvSCn8UXli1DZpcxY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbmFm/MS5pby9kYXRhL2lt/YWdlL2dhbWUvZm5h/Zi0xLWNoYXJhY3Rl/cnMtYW5pbWF0cm9u/aWNzLmpwZw",
                     "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/methods/refs/heads/main/Fnaf1.html"
+                },
+                {
+                    "title": "FNAF 2",
+                    "thumbnail": "https://imgs.search.brave.com/aCpSXMADsFesxzQbjcbfGVRiMG3i7mDNLRU1Gi7cYF8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS85Ny8y/MS83c0d3QmcuanBn",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/methods/refs/heads/main/Fnaf2.html"
+                },
+                {
+                    "title": "FNAF 3",
+                    "thumbnail": "https://imgs.search.brave.com/Kx-n_N4-NulbLV3XwbztI-pEPYIIAz-cGlxqajPZZgk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMubGF1bmNoYm94/LWFwcC5jb20vOGYy/NzAxYTAtNzg2MC00/YmI5LTk2OTgtMTdi/Mzg5ZWY1ZDMyLmpw/Zw",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/methods/refs/heads/main/Fnaf3.html"
+                },
+                {
+                    "title": "FNAF 4",
+                    "thumbnail": "https://imgs.search.brave.com/R3r9njOU6IIjZQeBd_nlIxtUp2CIDsRxsiRBwkhUR2A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzA2/MTA2Mi5wbmc",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/methods/refs/heads/main/Fnaf4.html"
                 }
             ]
         }
