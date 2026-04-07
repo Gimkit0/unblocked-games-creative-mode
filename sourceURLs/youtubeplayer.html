@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Search</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f0f;
+      color: white;
+      margin: 0;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      background: #202020;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    input {
+      padding: 12px;
+      width: 350px;
+      border: none;
+      border-radius: 8px 0 0 8px;
+      outline: none;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      background: #ff0000;
+      color: white;
+      cursor: pointer;
+      border-radius: 0 8px 8px 0;
+    }
+
+    button:hover {
+      background: #cc0000;
+    }
+
+    #results {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .video {
+      background: #181818;
+      padding: 10px;
+      border-radius: 12px;
+      transition: transform 0.2s;
+    }
+
+    .video:hover {
+      transform: scale(1.03);
+    }
+
+    iframe {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>YouTube Search</header>
+
+<div class="search-bar">
+  <input type="text" id="search" placeholder="Search videos...">
+  <button onclick="searchVideos()">Search</button>
+</div>
+
+<div id="results"></div>
+
+<script>
+const _0x11309a=_0x86bf;function _0x1712(){const _0x345b94=['</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','keypress','349281KvTwbu','title','getElementById','4078998hSaCmv','innerHTML','search','&type=video&maxResults=8&key=','2604266gwVPCA','3186624UnjjkP','items','9549090avLWbq','\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20frameborder=\x220\x22\x20allowfullscreen>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>','forEach','AIzaSyBC98kOckbNMN0CQptqze0vczjPu1lfSeo','4488726HFcAny','https://www.googleapis.com/youtube/v3/search?part=snippet&q=','value','addEventListener','590228xEhdhw','1tkRHCN','json','240OkHzwP','snippet','25ulPHjL'];_0x1712=function(){return _0x345b94;};return _0x1712();}(function(_0x535a3f,_0x2b730d){const _0x45bfaf=_0x86bf,_0x2df118=_0x535a3f();while(!![]){try{const _0x40e40f=parseInt(_0x45bfaf(0xe6))/0x1*(-parseInt(_0x45bfaf(0xf4))/0x2)+parseInt(_0x45bfaf(0xf0))/0x3+parseInt(_0x45bfaf(0xe5))/0x4*(-parseInt(_0x45bfaf(0xea))/0x5)+parseInt(_0x45bfaf(0xe1))/0x6+parseInt(_0x45bfaf(0xf5))/0x7+parseInt(_0x45bfaf(0xe8))/0x8*(parseInt(_0x45bfaf(0xed))/0x9)+-parseInt(_0x45bfaf(0xf7))/0xa;if(_0x40e40f===_0x2b730d)break;else _0x2df118['push'](_0x2df118['shift']());}catch(_0xe1d076){_0x2df118['push'](_0x2df118['shift']());}}}(_0x1712,0xb2d2e));function _0x86bf(_0x1f7488,_0x35041f){_0x1f7488=_0x1f7488-0xe0;const _0x17123e=_0x1712();let _0x86bf51=_0x17123e[_0x1f7488];return _0x86bf51;}const API_KEY=_0x11309a(0xe0);function searchVideos(){const _0x3d021f=_0x11309a,_0x7b9a12=document['getElementById'](_0x3d021f(0xf2))[_0x3d021f(0xe3)];fetch(_0x3d021f(0xe2)+_0x7b9a12+_0x3d021f(0xf3)+API_KEY)['then'](_0x428900=>_0x428900[_0x3d021f(0xe7)]())['then'](_0x4b87a8=>{const _0x233cf6=_0x3d021f,_0x3e26cf=document[_0x233cf6(0xef)]('results');_0x3e26cf[_0x233cf6(0xf1)]='',_0x4b87a8[_0x233cf6(0xf6)][_0x233cf6(0xf9)](_0x46a57e=>{const _0x5150e4=_0x233cf6,_0x2cfe9d=_0x46a57e['id']['videoId'];_0x3e26cf['innerHTML']+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22video\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<iframe\x20height=\x22200\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20src=\x22https://www.youtube-nocookie.com/embed/'+_0x2cfe9d+_0x5150e4(0xf8)+_0x46a57e[_0x5150e4(0xe9)][_0x5150e4(0xee)]+_0x5150e4(0xeb);});});}document[_0x11309a(0xef)](_0x11309a(0xf2))[_0x11309a(0xe4)](_0x11309a(0xec),function(_0x25119f){_0x25119f['key']==='Enter'&&searchVideos();});
+</script>
+
+</body>
+</html>
