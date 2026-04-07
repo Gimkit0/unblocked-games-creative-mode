@@ -1,0 +1,15 @@
+{
+    "video_apps": {
+        "platforms":{
+            "name": "Platforms",
+            "description": "A collection of popular apps that are used for watching videos online.",
+            "apps": [
+                {
+                    "title": "Youtube Watcher (NO COOKIE)",
+                    "thumbnail": "https://imgs.search.brave.com/rx3D1s57pwdxeZADewThLNxLLtnkpqBb4LaqfrWLK0s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjIz/NjQwNDMyMi9waG90/by90aGUteW91dHVi/ZS1sb2dvLWRpc3Bs/YXlzLW9uLWEtc2Ny/ZWVuLXdpdGgtYS1w/ZXJzb24taG9sZGlu/Zy1hLXBob25lLWlu/LWtudXJvdy1wb2xh/bmQtb24uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTBVVzN5/akh4b2lhalhfM1ox/UEg1V1BUZU9YUVYt/SUcxa0RVNUVZRWtm/WDA9",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/youtubeplayer.html"
+                }
+            ]
+        }
+    }
+}
