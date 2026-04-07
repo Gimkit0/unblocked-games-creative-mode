@@ -17,6 +17,7 @@
             <ul>
                 <li data-tab="home" onclick="window.changeTab('home')"><a>Home</a></li>
                 <li data-tab="games" onclick="window.changeTab('games')"><a>Games</a></li>
+                <li data-tab="apps" onclick="window.changeTab('apps')"><a>Apps</a></li>
             </ul>
         </nav>
         <div class="main-player hidden" id="gamePlayer">
@@ -28,6 +29,12 @@
                 <span class="player-title" id="playerTitle"></span>
             </div>
             <div class="player-content" id="playerContent"></div>
+        </div>
+        <div class="genre-container hidden" id="genreContainer">
+            <button class="genre-close-button" onclick="window.closeGenre()"><i class="fa-solid fa-xmark"></i></button>
+            <h1 id="genreTitle">Genre Title Here</h1>
+            <p class="genre-description" id="genreDescription">Genre Description Here</p>
+            <div class="grid" id="genreGrid"></div>
         </div>
         <main id="mainContent">
             <!-- Home Tab -->
@@ -41,16 +48,17 @@
                 <p>Explore our collection of games!</p>
 
                 <div class="content">
-                    <!-- Game Sections -->
-                    <div class="game-sections" id="gameSections"></div>
+                    <div id="gameSections"></div>
+                </div>
+            </div>
 
-                    <!-- Game Grid -->
-                    <div class="genre-game-container hidden" id="genreGameContainer">
-                        <button class="genre-close-button" onclick="window.closeGenre()"><i class="fa-solid fa-xmark"></i></button>
-                        <h1 id="genreTitle">Genre Title Here</h1>
-                        <p class="genre-description" id="genreDescription">Genre Description Here</p>
-                        <div class="game-grid" id="gameGrid"></div>
-                    </div>
+            <!-- Apps section -->
+            <div class="tab-content hidden" data-tab="apps">
+                <h2>Apps</h2>
+                <p>Explore our collection of apps!</p>
+
+                <div class="content">
+                    <div id="appSections"></div>
                 </div>
             </div>
         </main>
@@ -60,7 +68,7 @@
 <!-- Templates -->
 <template id="templates">
     <!-- Game Card Template -->
-    <div class="game-card" id="gameCardTemplate">
+    <div class="game-card" id="cardTemplate">
         <div class="game-card-content">
             <img class="game-thumbnail" src="" alt="Game Thumbnail" />
             <h3 class="game-title">Example Game</h3>
@@ -68,7 +76,7 @@
     </div>
     
     <!-- Game Section Template -->
-    <div class="game-section" id="gameSectionTemplate">
+    <div class="game-section" id="sectionTemplate">
         <h3 class="section-title">Section Title</h3>
         <div class="section-genres">
         </div>
@@ -88,17 +96,21 @@
 
     // Global Variables \\
     let gamesData = [];
+    let appsData = [];
     
     // DOM Elements \\
     const mainContent = document.querySelector('#mainContent');
     const templates = document.querySelector('#templates');
 
-    const gameCardTemplate = templates.content.querySelector('#gameCardTemplate');
-    const gameSectionTemplate = templates.content.querySelector('#gameSectionTemplate');
+    const cardTemplate = templates.content.querySelector('#cardTemplate');
+    const sectionTemplate = templates.content.querySelector('#sectionTemplate');
     const genreButtonTemplate = templates.content.querySelector('#genreButtonTemplate');
 
-    const gameGrid = document.querySelector('#gameGrid');
+    const genreGrid = document.querySelector('#genreGrid');
+    const genreContainer = document.getElementById('genreContainer');
+
     const gameSections = document.querySelector('#gameSections');
+    const appSections = document.querySelector('#appSections');
 
     // Utility Functions \\
     function wait(ms) {
@@ -144,30 +156,30 @@
         }
     }
 
-    // Game Loader Functions \\
-    function loadGames(games) {
-        gameGrid.innerHTML = '';
+    // Card Loader Functions \\
+    function loadCards(cards) {
+        genreGrid.innerHTML = '';
 
-        games.forEach(game => {
-            const gameCard = gameCardTemplate.cloneNode(true);
+        cards.forEach(card => {
+            const gameCard = cardTemplate.cloneNode(true);
             const thumbnail = gameCard.querySelector('.game-thumbnail');
             const title = gameCard.querySelector('.game-title');
 
-            const gameTitle = game.title || game.name || "Untitled Game";
-            const gameUrl = game.url || game.embedUrl || "";
-            const gameEmbedMethod = game.embedMethod;
-            const gameThumbnail = game.thumbnail || "https://via.placeholder.com/300x150?text=No+Thumbnail";
-            const gameSourceCode = game.sourceUrl
+            const infoTitle = card.title || card.name || "Untitled Game";
+            const infoUrl = card.url || card.embedUrl || "";
+            const infoEmbedMethod = card.embedMethod;
+            const infoThumbnail = card.thumbnail || "https://via.placeholder.com/300x150?text=No+Thumbnail";
+            const infoSourceCode = card.sourceUrl;
 
-            thumbnail.src = gameThumbnail;
-            title.textContent = gameTitle;
-            gameCard.onclick = () => openPlayer(gameTitle , gameEmbedMethod, gameSourceCode || gameUrl, !!gameSourceCode);
+            thumbnail.src = infoThumbnail;
+            title.textContent = infoTitle;
+            gameCard.onclick = () => openPlayer(infoTitle , infoEmbedMethod, infoSourceCode || infoUrl, !!infoSourceCode);
 
-            gameGrid.appendChild(gameCard);
+            genreGrid.appendChild(gameCard);
         })
     }
-    function loadSection(title, genres) {
-        const section = gameSectionTemplate.cloneNode(true);
+    function loadSection(title, genres, sectionElement = gameSections) {
+        const section = sectionTemplate.cloneNode(true);
         const sectionTitle = section.querySelector('.section-title');
 
         sectionTitle.textContent = title;
@@ -180,29 +192,27 @@
 
             genreName.textContent = genre.name;
 
-            genreButton.onclick = () => openGenre(genre.name, genre.description, genre.games); //loadGames(genre.games);
+            genreButton.onclick = () => openGenre(genre.name, genre.description, genre.games || genre.apps || []);
             sectionGenres.appendChild(genreButton);
         })
 
-        gameSections.appendChild(section);
+        sectionElement.appendChild(section);
     }
 
     // Genre Functions \\
-    function openGenre(genreName, genreDescription, games) {
-        const genreGameContainer = document.getElementById('genreGameContainer');
+    function openGenre(genreName, genreDescription, cards) {
         const genreTitle = document.getElementById('genreTitle');
         const genreDescriptionElement = document.getElementById('genreDescription');
 
         genreTitle.textContent = genreName;
         genreDescriptionElement.textContent = genreDescription;
 
-        loadGames(games);
-        genreGameContainer.classList.remove('hidden');
+        loadCards(cards);
+        genreContainer.classList.remove('hidden');
     }
     function closeGenre() {
-        const genreGameContainer = document.getElementById('genreGameContainer');
-        gameGrid.innerHTML = '';
-        genreGameContainer.classList.add('hidden');
+        genreGrid.innerHTML = '';
+        genreContainer.classList.add('hidden');
     }
 
     // Player Functions \\
@@ -239,7 +249,7 @@
             const embedSrc = customSrc || newSrc;
 
             let elementType = null;
-            if (method === "embeddrr" || isCode) {
+            if (method === "embeddr" || isCode) {
                 elementType = "iframe";
             } else if (!isCode) {
                 elementType = method;
@@ -262,8 +272,10 @@
             document.getElementById('playerContent').appendChild(newEmbed);
         }
         
-        if (method === "embeddrr") {
-            createNewEmbed("https://embeddrr.web.app/embed#" + newSrc);
+        if (method === "embeddr") {
+            const EMBEDDR_BASE_URL = "https://embeddrr.web.app/embed#"; // https://embeddrr.web.app/embed# | https://embeddr.rhw.one/embed
+
+            createNewEmbed(EMBEDDR_BASE_URL + newSrc);
         } else {
             createNewEmbed();
         }
@@ -284,14 +296,19 @@
     window.onload = async () => {
         // Preload
         gamesData = await loadJSON("https://gimkit0.github.io/unblocked-games-creative-mode/games.json");
+        appsData = await loadJSON("https://gimkit0.github.io/unblocked-games-creative-mode/apps.json");
 
         // Debugging
         console.log(gamesData);
+        console.log(appsData);
 
         // Initialization
+        // Games
         loadSection("Music Games", Object.values(gamesData.music_games));
         loadSection("Multiplayer Games", Object.values(gamesData.multiplayer_games));
         loadSection("Horror Games", Object.values(gamesData.horror_games));
+        // Apps
+        loadSection("Video Apps", Object.values(appsData.video_apps), appSections);
 
         // Testing
     }
@@ -454,7 +471,7 @@
     }
 
     /* Games */
-    .game-grid {
+    .grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         gap: 1rem;
@@ -524,7 +541,7 @@
         font-size: 1rem;
         color: var(--sub-text-color);
     }
-    .genre-game-container {
+    .genre-container {
         position: absolute;
         overflow: auto;
         z-index: 500;
