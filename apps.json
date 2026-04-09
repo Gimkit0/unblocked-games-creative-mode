@@ -1,6 +1,6 @@
 {
     "video_apps": {
-        "platforms":{
+        "platforms": {
             "name": "Platforms",
             "description": "A collection of popular apps that are used for watching videos online.",
             "apps": [
@@ -8,6 +8,24 @@
                     "title": "Youtube Watcher (NO COOKIE)",
                     "thumbnail": "https://imgs.search.brave.com/rx3D1s57pwdxeZADewThLNxLLtnkpqBb4LaqfrWLK0s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjIz/NjQwNDMyMi9waG90/by90aGUteW91dHVi/ZS1sb2dvLWRpc3Bs/YXlzLW9uLWEtc2Ny/ZWVuLXdpdGgtYS1w/ZXJzb24taG9sZGlu/Zy1hLXBob25lLWlu/LWtudXJvdy1wb2xh/bmQtb24uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTBVVzN5/akh4b2lhalhfM1ox/UEg1V1BUZU9YUVYt/SUcxa0RVNUVZRWtm/WDA9",
                     "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/youtubeplayer.html"
+                },
+                {
+                    "title": "Movie Player (Vapor)",
+                    "thumbnail": "https://imgs.search.brave.com/aLA5A9L4VzzkY0HlNyvRcV-Bq3ZvPsleG5F7oU3HbzY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aW1lb3V0LmNv/bS9pbWFnZXMvMTA2/MTU1MjUwLzc1MC81/NjIvaW1hZ2UuanBn",
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/vaporstreaming.html"
+                }
+            ]
+        }
+    },
+    "audio_apps": {
+        "music": {
+            "name": "Music",
+            "description": "A collection of popular apps that are used for listening to music online.",
+            "apps": [
+                {
+                    "title": "SoundCloud Player (Vapor)",
+                    "thumbnail": "https://imgs.search.brave.com/wXRcHQrugpboEG-PVm6R52JWuKkKRSO4NJElB5xENOA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvc291/bmRjbG91ZC1vcmFu/Z2UtYXJ0LXdoN2Fz/ZWY0emk4eTZ1MnQu/anBn",
+                    "url": "https://educational.eclipsecastellon.net/page/music/index.html"
                 }
             ]
         }
