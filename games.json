@@ -264,8 +264,8 @@
                 {
                     "title": "Roblox",
                     "thumbnail": "https://imgs.search.brave.com/sG4iGliB7a-iIcfMEPIAk_QDD8mAMe8Pd0E2yV8MEQ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvY29v/bC1yb2Jsb3gtcGlj/dHVyZXMteDNpZWpy/aWtveHo0MHh0cS5q/cGc",
-                    "url": "https://frogiesarcade.win/frog/ixl/hvtrs8%2F-52.kp%2Cnmweg%2Cfwn-arpq%2Fc%2F39%3B02%2F%60.jtol",
-                    "embedMethod": "iframe"
+                    "sourceUrl": "https://raw.githubusercontent.com/Gimkit0/unblocked-games-creative-mode/refs/heads/main/sourceURLs/robloxplayer.html",
+                    "embedMethod": "document"
                 }
             ]
         },
