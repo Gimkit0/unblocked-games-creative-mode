@@ -239,14 +239,30 @@
             document.exitFullscreen();
         }
     }
+    function runScripts(container) {
+        const scripts = container.querySelectorAll("script");
+
+        scripts.forEach(oldScript => {
+            const newScript = document.createElement("script");
+
+            for (let attr of oldScript.attributes) {
+                newScript.setAttribute(attr.name, attr.value);
+            }
+
+            newScript.textContent = oldScript.textContent;
+
+            oldScript.parentNode.replaceChild(newScript, oldScript);
+        });
+    }
     function changeEmbedMethod(method = DEFAULT_EMBED_METHOD, newSrc, isCode = false) {
         const classValue = 'player-embed-method full-size';
         const embedId = 'playerFrame';
-
-        const playerFrame = document.getElementById('playerFrame');
+        
+        const playerFrame = document.getElementById(embedId);
 
         async function createNewEmbed(customSrc) {
             const embedSrc = customSrc || newSrc;
+            let source = null;
 
             let elementType = null;
             if (method === "embeddr" || isCode) {
@@ -254,19 +270,31 @@
             } else if (!isCode) {
                 elementType = method;
             }
+            if (method === "document") {
+                elementType = "div";
+            }
+            
+            if (isCode) {
+                source = await fetchSourceURL(embedSrc);
+            }
 
             const newEmbed = document.createElement(elementType);
             newEmbed.id = embedId;
             newEmbed.className = classValue;
             newEmbed.setAttribute('allowfullscreen', 'true');
             
-            if (method === "object" && !isCode) {
-                newEmbed.data = embedSrc;
-            } else if (!isCode) {
-                newEmbed.src = embedSrc;
-            } else if (isCode) {
-                const source = await fetchSourceURL(embedSrc);
-                newEmbed.srcdoc = source;
+            if (method === "document") {
+                newEmbed.innerHTML = source;
+                newEmbed.id = "documentEmbed";
+                runScripts(newEmbed);
+            } else {
+                if (method === "object" && !isCode) {
+                    newEmbed.data = embedSrc;
+                } else if (!isCode) {
+                    newEmbed.src = embedSrc;
+                } else if (isCode) {
+                    newEmbed.srcdoc = source;
+                }
             }
 
             document.getElementById('playerContent').appendChild(newEmbed);
@@ -280,6 +308,20 @@
             createNewEmbed();
         }
     }
+    function removePlayerFrame() {
+        const playerFrame = document.getElementById('playerFrame');
+        const documentEmbed = document.getElementById('documentEmbed');
+        setTimeout(() => {
+            if (playerFrame) {
+                playerFrame.remove();
+            }
+        }, 750);
+        setTimeout(() => {
+            if (documentEmbed) {
+                documentEmbed.remove();
+            }
+        }, 1000);
+    }
     
     // Initialization \\
     // Set initial tab
@@ -291,6 +333,8 @@
     window.closePlayer = closePlayer;
     window.toggleFullscreen = toggleFullscreen;
     window.closeGenre = closeGenre;
+    window.changeEmbedMethod = changeEmbedMethod;
+    window.removePlayerFrame = removePlayerFrame;
 
     // Test functions go down here :D
     window.onload = async () => {
