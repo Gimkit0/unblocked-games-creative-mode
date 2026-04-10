@@ -312,13 +312,15 @@
         const playerFrame = document.getElementById('playerFrame');
         const documentEmbed = document.getElementById('documentEmbed');
         setTimeout(() => {
-            if (playerFrame) {
-                playerFrame.remove();
-            }
             if (documentEmbed) {
                 documentEmbed.remove();
             }
-        }, 1000);
+        }, 2000);
+        setTimeout(() => {
+            if (playerFrame) {
+                playerFrame.remove();
+            }
+        }, 1500);
     }
     
     // Initialization \\
