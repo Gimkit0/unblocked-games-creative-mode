@@ -71,11 +71,8 @@
                 <div class="content">
                     <div id="unproxiedBrowser">
                         <div class="search-container">
-                            <input
-                                type="search"
-                                id="websiteSearch"
-                                placeholder="Input a website URL here"
-                            >
+                            <input type="search" id="websiteSearch" placeholder="Input a website URL here">
+                            <button id="methodButton">embed</button>
                         </div>
                     </div>
                 </div>
@@ -116,6 +113,7 @@
     // Global Variables \\
     let gamesData = [];
     let appsData = [];
+    let currentMethod = "embed";
     
     // DOM Elements \\
     const mainContent = document.querySelector('#mainContent');
@@ -128,6 +126,7 @@
     const genreGrid = document.querySelector('#genreGrid');
     const genreContainer = document.getElementById('genreContainer');
     const websiteSearch = document.getElementById('websiteSearch');
+    const methodButton = document.getElementById('methodButton');
 
     const gameSections = document.querySelector('#gameSections');
     const appSections = document.querySelector('#appSections');
@@ -302,8 +301,9 @@
             newEmbed.id = embedId;
             newEmbed.className = classValue;
             
-            if (elementType === "iframe") {
-                newEmbed.allow = "fullscreen";
+            if (elementType === "iframe" || elementType === "embed") {
+                newEmbed.allowFullscreen = true;
+                newEmbed.setAttribute("allow", "fullscreen");
             }
             if (method === "document") {
                 newEmbed.innerHTML = source;
@@ -324,7 +324,6 @@
         
         if (method === "embeddr") {
             const EMBEDDR_BASE_URL = "https://embeddrr.web.app/embed#"; // https://embeddrr.web.app/embed# | https://embeddr.rhw.one/embed
-
             createNewEmbed(EMBEDDR_BASE_URL + newSrc);
         } else {
             createNewEmbed();
@@ -385,8 +384,23 @@
             if (!/^https?:\/\//i.test(url)) {
                 url = 'https://' + url;
             }
-            openPlayer(url, "iframe", url);
+            openPlayer(url, currentMethod, url);
         });
+        methodButton.addEventListener('click', () => {
+            if (methodButton.textContent === "embed") {
+                methodButton.textContent = "iframe";
+                currentMethod = "iframe";
+            } else if (methodButton.textContent === "iframe") {
+                methodButton.textContent = "embeddr";
+                currentMethod = "embeddr";
+            } else if (methodButton.textContent === "embeddr") {
+                methodButton.textContent = "object";
+                currentMethod = "object";
+            } else {
+                methodButton.textContent = "embed";
+                currentMethod = "embed";
+            }
+        })
 
         // Testing
     }
