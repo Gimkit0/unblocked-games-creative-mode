@@ -207,6 +207,11 @@
                     "title": "Minecraft 1.12.2 (Eaglercraft)",
                     "thumbnail": "https://gn-math.dev/s/EE0_FEFXflkxUx5iECccXCcNRB9_GDdDXysSex5LLgFQGDgFPFIDP1U3F08uFkEtPBc7WV8//182.png",
                     "url": "https://gimkit0.github.io/uv-static/minecraft.html"
+                },
+                {
+                    "title": "Minecraft 1.6.4 (Eaglercraft)",
+                    "thumbnail": "https://imgs.search.brave.com/t13iy1GCi57_eZ_6BaaMQsdtHB7BVtcwuE6HcB531gQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/ZS1pbWFnZXMucy1t/aWNyb3NvZnQuY29t/L2ltYWdlL2FwcHMu/NjA4LjEzNTEwNzk4/ODg1NzM1MjE5LmNm/NTVhZWNhLWU2OTAt/NDFlMC1hODhiLTQx/YjBlNTE3YTNiZS5j/OTRlMWJmYS0xYjY4/LTRjZjUtOTk1NC1m/OTY3MTY4NDgwYjQ_/cT05MCZ3PTQ4MCZo/PTI3MA",
+                    "url": "https://eaglercraft.q13x.com/eagler-modpack-snapshot/ultimate/wasm/"
                 }
             ]
         },
