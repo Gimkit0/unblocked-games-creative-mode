@@ -8,6 +8,7 @@
         <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/spreadsheets_2023q4.ico" />
         <link href="https://fonts.cdnfonts.com/css/minecrafter-alt" rel="stylesheet">
         <script src="https://kit.fontawesome.com/424b17ee5b.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     </head>
     <body>
         <nav class="navbar">
@@ -130,6 +131,8 @@
 
     const gameSections = document.querySelector('#gameSections');
     const appSections = document.querySelector('#appSections');
+
+    window.RufflePlayer.config = {allowScriptAccess: true};
 
     // Utility Functions \\
     function wait(ms) {
@@ -284,22 +287,25 @@
             let source = null;
 
             let elementType = null;
-            if (method === "embeddr" || isCode) {
-                elementType = "iframe";
-            } else if (!isCode) {
-                elementType = method;
-            }
-            if (method === "document") {
-                elementType = "div";
-            }
+            if (method === "embeddr" || isCode) {elementType = "iframe";} else if (!isCode) {elementType = method;}
+            if (method === "document") {elementType = "div";}
+            if (method === "ruffle") {elementType = "object";}
             
-            if (isCode) {
-                source = await fetchSourceURL(embedSrc);
-            }
+            if (isCode) {source = await fetchSourceURL(embedSrc);}
 
             const newEmbed = document.createElement(elementType);
             newEmbed.id = embedId;
             newEmbed.className = classValue;
+
+            if (method === "ruffle") {
+                const ruffleEmbed = document.createElement("embed");
+                ruffleEmbed.className = "ruffle-embed";
+                ruffleEmbed.style.width = "100%";
+                ruffleEmbed.style.height = "100%";
+                ruffleEmbed.src = embedSrc;
+                ruffleEmbed.type = "application/x-shockwave-flash";
+                newEmbed.appendChild(ruffleEmbed);
+            }
             
             if (elementType === "iframe" || elementType === "embed") {
                 newEmbed.allowFullscreen = true;
