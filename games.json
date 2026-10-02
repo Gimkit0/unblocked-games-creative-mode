@@ -249,6 +249,32 @@
                     "title": "Hole.io",
                     "thumbnail": "https://imgs.search.brave.com/1C8eA18LSm8mIbNk8_BsVkoXUuHyG6XDPptZ2HkE_Bo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/ZS1pbWFnZXMucy1t/aWNyb3NvZnQuY29t/L2ltYWdlL2FwcHMu/NTk3ODEuMTQyMTE0/ODc2MzQ5NTA5MDEu/NDJlOTg0ZmItNTkx/NS00ODBiLWE4MGQt/OWRlNjE1MzJiN2Y3/Ljk5MzY2MjFlLWRi/NGItNGZjNC1hZjA1/LWZkZGVmYmZhMTgx/Yz9xPTkwJnc9MzM2/Jmg9MjAw",
                     "url": "https://holeio.com/"
+                },
+                {
+                    "title": "Bloons TD 6",
+                    "thumbnail": "https://imgs.search.brave.com/eS9dr6tlqVpPeaIvhQk_OHCo54b_kH63laUbclH4q8M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUyNDg4/MzYuanBn",
+                    "url": "https://iclouds.space/HTML5GAMES/BloonsTD6/index.html"
+                },
+                {
+                    "title": "Bloons TD 5",
+                    "thumbnail": "https://imgs.search.brave.com/SNQVKg3DTmhe_XFADg-ezH7n1CxhTgQi6hQaroJfMyc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDExMjA2/NTc4LmpwZw",
+                    "url": "https://en.gameslol.net/data/bloons-td-5/index.php"
+                },
+                {
+                    "title": "Bloons TD 4",
+                    "thumbnail": "https://imgs.search.brave.com/aRwTg2rVptlxp4GrsKWszR-F0fl68pFMgjDHKysDxPc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9v/bnMtdGQuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI1LzEy/L2Jsb29ucy10ZC00/LndlYnA",
+                    "url": "https://www.bubbleshooter.net/games/bloons-tower-defense-4.php"
+                },
+                {
+                    "title": "Bloons TD 3",
+                    "thumbnail": "https://imgs.search.brave.com/VROY2wYLsauO92kerDIW6NCCGGOU2zsPPjerftEjkKk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ob3ds/b25ndG9iZWF0LmNv/bS9nYW1lcy82MzA3/MV9CbG9vbnNfVERf/My5qcGVnP3dpZHRo/PTc2MA",
+                    "url": "https://www.bubbleshooter.net/games/bloons-tower-defense-3.php"
+                },
+                {
+                    "title": "Bad Piggies 2018",
+                    "thumbnail": "https://pinterest.com/appworld/bad-piggies",
+                    "url": "https://gimkit0.github.io/unblocked-games-creative-mode/sourceURLs/bad-piggies-online-2018.swf",
+                    "embedMethod": "ruffle"
                 }
             ]
         },
