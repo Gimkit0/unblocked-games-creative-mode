@@ -199,6 +199,18 @@
         }
     },
     "multiplayer_games": {
+        "survival_games": {
+            "name": "Survival Games",
+            "description": "Engage in intense multiplayer survival experiences where you must survive and thrive.",
+            "games": [
+                {
+                    "title": "Minecraft 1.12.2 (Eaglercraft)",
+                    "thumbnail": "https://gn-math.dev/s/EE0_FEFXflkxUx5iECccXCcNRB9_GDdDXysSex5LLgFQGDgFPFIDP1U3F08uFkEtPBc7WV8//182.png",
+                    "sourceUrl": "https://github.com/Gimkit0/unblocked-games-creative-mode/raw/refs/heads/main/sourceURLs/minecraft.html",
+                    "embedMethod": "document"
+                }
+            ]
+        },
         "battle_royale": {
             "name": "Battle Royale Games",
             "description": "Engage in intense multiplayer battles where the last player standing wins.",
